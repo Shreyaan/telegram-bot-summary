@@ -5,8 +5,7 @@ import OpenAI from "openai";
 import NodeCache from "node-cache";
 import { chatgptSummary } from "./chatgptSummary";
 export const memberUsage = new NodeCache({
-  stdTTL: 3600,
-  checkperiod: 60,
+  // checkperiod: 20,
   deleteOnExpire: true,
 });
 
